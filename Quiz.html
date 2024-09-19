@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO QUIZMASTERS ACADEMY</title>
+    <link rel="icon"
+        href="https://th.bing.com/th/id/OIP.OqvvRe5rpzbqmrSYjLZ9DQAAAA?w=225&h=99&c=7&r=0&o=5&dpr=1.2&pid=1.7">
+
+</head>
+<style>
+    .popup-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.9);
+        width: 500px;
+        background-color: seagreen;
+        padding: 10px 25px;
+        border-radius: 30px;
+
+    }
+
+    .popup-info h3 {
+        font-size: 40px;
+        color: purple;
+        text-align: center;
+    }
+
+    .popup-info .info {
+        display: inline-block;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        font-weight: 500;
+        margin: 4px 0;
+    }
+
+    .popup-info .btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #999;
+        margin-top: 10px;
+        padding: 15px 0 7px;
+    }
+
+    button {
+        width: 130px;
+        background: #c40094;
+        border: 2px solid #c40094;
+        cursor: pointer;
+        outline: none;
+        border-radius: 6px;
+        height: 45px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        transition: .5s;
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        background: #c40094;
+        border: 2px solid #c40094;
+        outline: none;
+        border-radius: 6px;
+        height: 45px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        transition: .5s;
+        font-weight: 600;
+    }
+
+    .popup-info.active {
+        opacity: 1;
+        pointer-events: all;
+        transition: .3s ease;
+        transform: translate(-50%, -50%) scale(.9);
+    }
+
+    .popup-info .btn-group .info-btn:nth-child(1) {
+        background-color: transparent;
+        color: #c40094;
+
+    }
+
+    .popup-info .btn-group .info-btn:nth-child(1):hover {
+        background-color: #c40094;
+        color: #fff;
+
+    }
+
+    .popup-info .btn-group .info-btn:nth-child(2):hover {
+        background-color: #950170;
+        border-color: #950170;
+
+    }
+</style>
+<html>
+
+<body>
+    <div class="popup-info">
+        <h3>QUIZ GUIDE</h3>
+        <span class="info">1.THERE ARE USE OF COMPUTER LANGUAGES</span><br>
+        <span class="info">2.THERE ARE USE OF DIFFERENT SUBJECTS</span><br>
+        <span class="info">3.THE SCORE IS ALSO COUNTED</span><br>
+        <div class="btn-group">
+            <button class="info-btn exit-btn" onclick="location.href='std9.html'">Exit Quiz</button>
+            <a class="info-btn continue-btn" href="#" onclick="location.href='codingquiz.html'">Continue</a>
+        </div>
+    </div>
+
+</body>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</html>
